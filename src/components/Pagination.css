@@ -1,0 +1,26 @@
+.active-page {
+    background-color: #9290C3 !important;
+    
+}
+.ul-pagination {
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    gap: 6px;
+    margin: 20px 0px;
+}
+
+.btn-number {
+    border: none;
+    width: 30px;
+    background-color: #070F2B;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-not-number {
+    border: none;
+    color: #070F2B;
+    background-color: #ffffff00;
+    font-weight: bold;
+}

@@ -1,0 +1,91 @@
+.trending-movie-main img {
+    width: 250px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.trending-movie-main:hover {
+    transform: translate(0%, 1%);
+}
+
+.circle-progress {
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+
+}
+
+.trending-movie-main h4{
+    margin: 0;
+    font-size: 20px;
+}
+
+.trending-movie-main {
+    display: flex;
+    flex-direction: column;
+    border: 1px #1B1A55 solid;
+    border-radius: 10px;
+    background: #1B1A55;
+    color: white;
+    cursor: pointer;
+    width: min-content;
+    
+}
+
+.text-movie-search {
+    position: relative;
+    bottom: 30px;
+    padding: 6px 0px 0px 12px;
+}
+
+
+@media only screen and (max-width: 670px){
+
+
+.trending-movie-main img {
+    width: 150px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.trending-movie-main:hover {
+    transform: translate(0%, 1%);
+}
+
+.circle-progress {
+    position: relative;
+    top: 170px;
+    left: -23px;
+
+}
+
+.trending-movie-main h4{
+    margin: 0;
+    font-size: 14px;
+}
+
+.trending-movie-main {
+    display: flex;
+    flex-direction: row;
+    border: 1px #1B1A55 solid;
+    border-radius: 10px;
+    background: #1B1A55;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    
+}
+
+.text-movie-search {
+    position: relative;
+    right: 50px;
+    top: 6px;
+    padding: 6px 0px 0px 12px;
+}
+
+.release-date-text {
+    width: max-content;
+    font-size: 12px;
+}
+
+}

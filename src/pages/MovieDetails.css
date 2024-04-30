@@ -1,0 +1,283 @@
+.placeholder-div {
+    min-height: 800px;
+}
+
+.movie-details-background {
+    box-shadow: inset 0 0 0 1000px #9290c3da;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.image-details {
+    width: auto;
+    height: 500px;
+    border-radius: 10px;    
+}
+
+.movie-details-content {
+    display: flex;
+    gap: 20px;
+    padding: 50px 100px;
+    min-height: 600px;
+}
+
+.movie-details-text {
+    padding: 0px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+
+}
+.movie-details-text h2{
+    display: inline;
+
+}
+.movie-details-text h5 {
+    margin: 0;
+
+}
+.movie-details-text p {
+    margin: 0;
+
+}
+
+.movie-details-facts {
+    display: block;
+}
+
+.dots {
+    font-size: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 1em;
+    margin: 15px 0px;
+}
+
+.ul-crew {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding: 0px;
+    width: 50%;
+    list-style: none;
+    gap: 10px;
+}
+
+
+.cast-info {
+    border: 1px solid #1B1A55;
+    width: min-content;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #070F2B;
+    color: white;
+}
+
+.cast-text{
+    padding: 6px 10px 10px 10px;
+
+}
+
+.cast-info img {
+    border-radius: 15px 15px 0px 0px;
+    width: 150px;
+}
+
+.cast-info p {
+    margin: 0;
+}
+
+.movie-extra-info {
+    grid-column: 2/3;
+    grid-row: 1/6;
+    padding: 0px 30px;
+}
+
+.fader-true{
+    box-shadow: -35px -25px 17px -5px #f1f1f169;
+
+}
+
+.movie-extra-info p {
+    margin: 0 0 25px 0px;
+
+}
+
+.production-companies span{
+    display: block;
+    padding: 10px 0px;
+}
+
+.movie-extra-info a {
+    color: rgb(57, 194, 228);
+}
+
+.movie-info-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 20px 50px 20px 100px;
+    gap: 10px;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    grid-row: 1/2;
+}
+
+.cast-container {
+    display: flex;
+    overflow: scroll;
+    gap: 6px;
+    padding-bottom: 20px;
+}
+
+.videos-container {
+    display: flex;
+    overflow: scroll;
+    gap: 4px;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    grid-row: 2/3;
+}
+
+.review-container {
+    grid-column: 1/2;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.review-details img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.review-details {
+    border: 1px solid #070F2B;
+    padding: 20px;
+}
+
+.review-details button {
+    background-color: #070F2B;
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.review-image-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.review-image-title strong {
+    display: block
+}
+
+.ul-keywords {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.ul-keywords li {
+    padding: 10px 0px;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-full-cast {
+    background-color: #1B1A55;
+    border: 1px solid #070F2B ;
+}
+
+.frame-video {
+    border: 3px solid #9290c3;
+}
+
+@media only screen and (max-width: 1200px) {
+    .movie-details-content {
+        padding: 50px 50px;
+    }
+    .movie-details-text {
+        padding: 0;
+    }
+    .image-details {
+        height: 600px;
+    }
+    .ul-crew {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .movie-details-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-details {
+        height: auto;
+        width: 300px;
+        align-self: center;
+    }
+    .ul-crew {
+        width: 50%;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .movie-info-container {
+        padding: 20px 10px 20px 30px;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .ul-crew {
+        width: 100%;
+        align-self: center;
+    }
+    .movie-extra-info {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        text-align: center;
+    }
+    .videos-container {
+        grid-column: 1/2;
+    }
+    .first-section {
+        grid-column: 1/2;
+    }
+
+    .movie-extra-info a {
+        grid-column: 1/3;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+
+    .movie-extra-info div {
+        border: 1px solid rgb(173, 173, 173);
+    }
+}

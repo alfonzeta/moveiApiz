@@ -1,0 +1,60 @@
+.header-container {
+    background-color: #070F2B;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.header-container img {
+    width: 80px;
+}
+
+
+.input-search {
+    background-color: #9290C3;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.input-search:focus{
+    outline: none;
+}
+
+.form-search2{
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #9290C3;
+    width: 100%;
+    padding: 0px 60px;
+    height: 60px;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.upcoming-title {
+    color: white;
+    margin: 0;
+
+}
+
+@media only screen and (max-width: 550px) {
+    .header-container {
+        padding: 20px;
+        height: 60px;
+    }
+    .header-container img {
+        width: 50px;
+    }
+}

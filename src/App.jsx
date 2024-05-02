@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-
 import {Route,Routes} from "react-router-dom"
-import {useNavigate} from "react-router-dom"
 import './App.css'
 import UpcomingMovies from './pages/UpcomingMovies';
 import Footer from './components/Footer';
@@ -13,15 +11,13 @@ import Header from './components/Header';
 
 
 function App() {
-  const navigate = useNavigate();
   const [query, setQuery] = useState("")
-  const [inputText, setInputText] = useState("")
   
 
   return(
     <>
     
-      <Header/>
+      <Header setQuery={setQuery}/>
       <Routes>
         <Route path='/movieApiz' element={<Index setQuery={setQuery}/>}/>
         <Route path='/:id' element={<MovieDetails/>}/>

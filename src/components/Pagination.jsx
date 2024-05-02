@@ -48,7 +48,6 @@ export default function Pagination({moviesObject, setPage, page, rootURL}) {
         }
         
     }
-    console.log(arrayPages);
 
     buildArrayPages()
 

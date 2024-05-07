@@ -1,0 +1,24 @@
+.cast img {
+    width: 66px;
+    border-radius: 6px;
+}
+
+.person-cast {
+    display: flex;
+    padding: 10px 0px;
+    gap: 10px;
+    align-items: center;
+}
+
+.container-cast {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 50%;
+}
+
+@media only screen and (max-width: 550px) {
+    .container-cast {
+        flex-direction: column;
+    }
+}

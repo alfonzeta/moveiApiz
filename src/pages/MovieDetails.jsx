@@ -141,7 +141,7 @@ export default function MovieDetails() {
               </div>
             </div>)
           ))}
-          <button className='btn-full-cast'><FaArrowRight size={"30px"} color='white'/></button>
+          <button onClick={() => navigate(`/${id}/cast`)} className='btn-full-cast'><FaArrowRight size={"30px"} color='white'/></button>
         </div>
         </div>
       </>

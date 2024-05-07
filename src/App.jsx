@@ -27,6 +27,7 @@ function App() {
         <Route path='/search/:page' element={<SearchMovies query={query}/>}/>
       </Routes>
       
+      
       <Footer/>
 
         

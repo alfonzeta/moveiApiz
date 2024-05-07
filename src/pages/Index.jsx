@@ -3,7 +3,6 @@ import "./Index.css"
 import {useNavigate} from "react-router-dom"
 import { DETAIL_TRENDING, POSTER_PATH, TRENDING_URL } from '../store/storage'
 import useFetchTrending from '../hooks/useFetchTrending'
-import CircleProgressBar from './CircleProgressBar'
 import MovieCardTrending from '../components/MovieCardTrending'
 
 export default function Index({setQuery}) {

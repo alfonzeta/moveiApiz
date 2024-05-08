@@ -1,7 +1,7 @@
 import React from 'react'
-import { optionsAuth, SEARCH_URL, DETAIL_SEARCH, POSTER_PATH } from '../store/storage';
-import { useEffect,useState } from 'react';
-import {useNavigate} from "react-router-dom"
+import { optionsAuth, SEARCH_URL, DETAIL_SEARCH } from '../store/storage';
+import { useState } from 'react';
+import {useNavigate, useParams} from "react-router-dom"
 import useFetchSearch from '../hooks/useFetchSearch';
 import Pagination from '../components/Pagination';
 import Index from './Index';
@@ -10,22 +10,22 @@ import "./SearchMovies.css"
 
 export default function SearchMovies({query}) {
 
-  const navigate = useNavigate();
   const [moviesSearched, setMoviesSearched] = useState("")
   const [moviesSearchedObject, setMoviesSearchedObject] = useState("")
   const [searchPage, setSearchPage] = useState(1)
-  const urlSearch = `${SEARCH_URL}${query}${DETAIL_SEARCH}${searchPage}}`
-  const rootURL = "/search/"
   const options = optionsAuth
+  const alternativeQuery = useParams().query
+  const alternativePage = useParams().page
+  const urlSearch = `${SEARCH_URL}${alternativeQuery}${DETAIL_SEARCH}${alternativePage}}`
+  const rootURL = `/movieApiz/search/${alternativeQuery}/`
 
 
-
-  useFetchSearch(urlSearch,options,query, setMoviesSearchedObject, setMoviesSearched,searchPage)
+  useFetchSearch(urlSearch,options,query, setMoviesSearchedObject, setMoviesSearched,searchPage, alternativeQuery)
 
   const searchedMoviesBlock = () => {
     return (
         <>
-        {query &&
+        {alternativeQuery &&
             <Pagination moviesObject={moviesSearchedObject} setPage={setSearchPage} page={searchPage} rootURL={rootURL}/>
         }    
 

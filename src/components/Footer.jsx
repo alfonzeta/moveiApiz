@@ -11,7 +11,7 @@ export default function Footer() {
           <a className="btn btn-outline-light btn-floating m-1" target='_blank' href="//www.linkedin.com/in/alfonso-za" role="button">
             <FaLinkedinIn />
           </a>
-          <a className="btn btn-outline-light btn-floating m-1" href="//https://github.com/alfonzeta" role="button">
+          <a className="btn btn-outline-light btn-floating m-1" target='_blank' href="//www.github.com/alfonzeta" role="button">
             <FaGithub />
           </a>
         </section>

@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-export default function useFetchSearch(url, option,query, setState, setMoviesSearched, searchPage) {
+export default function useFetchSearch(url, option,query, setState, setMoviesSearched, searchPage, alternativeQuery) {
 
     useEffect(() => {
         fetch(url,option)
@@ -10,6 +10,6 @@ export default function useFetchSearch(url, option,query, setState, setMoviesSea
         }
     )
         .catch(err => console.error(err));
-    }, [query,searchPage])
+    }, [query,searchPage, alternativeQuery])
     
 }

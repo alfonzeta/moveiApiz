@@ -19,12 +19,11 @@ function App() {
     
       <Header setQuery={setQuery}/>
       <Routes>
-        <Route path='/movieApiz' element={<Index setQuery={setQuery}/>}/>
-        <Route path='/:id' element={<MovieDetails/>}/>
-        <Route path='/:id/cast' element={<FullCastandCrew/>}/>
-        <Route path='/upcoming/' element={<UpcomingMovies/>}/>
-        <Route path='/upcoming/:page' element={<UpcomingMovies/>}/>
-        <Route path='/search/:page' element={<SearchMovies query={query}/>}/>
+        <Route path='/movieApiz' element={<Index setQuery={setQuery} query={query}/>}/>
+        <Route path='/movieApiz/:id' element={<MovieDetails/>}/>
+        <Route path='/movieApiz/:id/cast' element={<FullCastandCrew/>}/>
+        <Route path='/movieApiz/upcoming/:page' element={<UpcomingMovies/>}/>
+        <Route path='/movieApiz/search/:query/:page' element={<SearchMovies query={query}/>}/>
       </Routes>
       
       

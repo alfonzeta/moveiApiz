@@ -4,7 +4,7 @@ import {useNavigate, useParams} from "react-router-dom"
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 
-export default function Pagination({moviesObject, setPage, page, rootURL}) {
+export default function Pagination({moviesObject, setPage, page, rootURL, query}) {
 
     const navigate = useNavigate();
     const totalPages = moviesObject.total_pages

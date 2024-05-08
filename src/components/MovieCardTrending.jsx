@@ -12,7 +12,7 @@ export default function MovieCard({movie}) {
  
   return (
     <>
-          <div onClick={() => navigate(`/${movie.id}-${movie.original_title.split(" ").join("-")}`)} key={movie.id} className='trending-movie'>
+          <div onClick={() => navigate(`/movieApiz/${movie.id}-${movie.original_title.split(" ").join("-")}`)} key={movie.id} className='trending-movie'>
           {movie.poster_path 
           ? <img onLoad={() => setImageLoaded(POSTER_PATH+movie.poster_path)} src={imageLoaded} alt="" />
           : <img src={imgPlaceholder}/>

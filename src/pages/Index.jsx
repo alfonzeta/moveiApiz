@@ -5,7 +5,7 @@ import { DETAIL_TRENDING, POSTER_PATH, TRENDING_URL } from '../store/storage'
 import useFetchTrending from '../hooks/useFetchTrending'
 import MovieCardTrending from '../components/MovieCardTrending'
 
-export default function Index({setQuery}) {
+export default function Index({setQuery, query}) {
   
   const navigate = useNavigate();
   const [range, setRange] = useState("day")
@@ -64,7 +64,7 @@ export default function Index({setQuery}) {
 
   function handleSubmit(e) {
     e.preventDefault()
-    navigate(`/search/1`)
+    navigate(`/movieApiz/search/${query}/1`)
     
   }
 
